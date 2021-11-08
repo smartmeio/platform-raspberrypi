@@ -42,6 +42,11 @@ class RaspberrypiPlatform(PlatformBase):
                 self.packages["framework-arduino-mbed"]["optional"] = True
                 self.packages.pop("toolchain-gccarmnoneeabi", None)
                 self.packages["toolchain-rp2040-earlephilhower"]["optional"] = False                
+            elif build_core == "arancino":
+                self.frameworks["arduino"]["package"] = "framework-arduino-rp2040-arancino"
+                self.packages["framework-arduino-mbed"]["optional"] = True
+                self.packages.pop("toolchain-gccarmnoneeabi", None)
+                self.packages["toolchain-rp2040-earlephilhower"]["optional"] = False
             else:
                 sys.stderr.write(
                     "Error! Unknown build.core value '%s'. Don't know which Arduino core package to use." % build_core)
