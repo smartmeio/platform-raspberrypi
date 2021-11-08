@@ -32,7 +32,7 @@
       "version": "~1.90201.0"
     },
     "toolchain-pico": {
-      "type": "toolchain", 
+      "type": "toolchain",
       "optional": true,
       "owner": "maxgerhardt",
       "version": "~5.100300.0"
@@ -47,7 +47,13 @@
       "type": "framework",
       "optional": true,
       "owner": "maxgerhardt",
-      "version": "~1.10902.0"
+      "version": "~5.100300.0"
+    },
+    "framework-arduino-rp2040-arancino": {
+      "type": "framework",
+      "optional": true,
+      "owner": "smartmeio",
+      "version": "~1.10907.0"
     },
     "tool-rp2040tools": {
       "type": "uploader",
