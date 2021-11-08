@@ -49,6 +49,12 @@
       "owner": "earlephilhower",
       "version": "https://github.com/earlephilhower/arduino-pico.git#1812b829dcbb89b3dffa3864dc552c23d4c03bc9"
     },
+    "framework-arduino-rp2040-arancino": {
+      "type": "framework",
+      "optional": true,
+      "owner": "smartmeio",
+      "version": "~1.20502.0"
+    },
     "tool-rp2040tools": {
       "type": "uploader",
       "owner": "platformio",
