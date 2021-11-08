@@ -22,7 +22,7 @@
   "frameworks": {
     "arduino": {
       "package": "framework-arduino-mbed",
-      "script": "builder/frameworks/arduino/mbed-core/arduino-core-mbed.py"
+      "script": "builder/frameworks/arduino/arduino.py"
     }
   },
   "packages": {
@@ -31,11 +31,23 @@
       "owner": "platformio",
       "version": "~1.90201.0"
     },
+    "toolchain-pico": {
+      "type": "toolchain", 
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "~5.100300.0"
+    },
     "framework-arduino-mbed": {
       "type": "framework",
       "optional": true,
       "owner": "platformio",
       "version": "~2.5.0"
+    },
+    "framework-arduinopico": {
+      "type": "framework",
+      "optional": true,
+      "owner": "maxgerhardt",
+      "version": "~1.10902.0"
     },
     "tool-rp2040tools": {
       "type": "uploader",
@@ -52,7 +64,13 @@
       "type": "uploader",
       "optional": true,
       "owner": "platformio",
-      "version": "^1.72000.0"
+      "version": "~1.72000.0"
+    },
+    "tool-mklittlefs": {
+      "type": "uploader",
+      "optional": true,
+      "owner": "platformio",
+      "version": "~1.203.0"
     }
   }
 }
