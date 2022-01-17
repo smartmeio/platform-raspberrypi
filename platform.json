@@ -52,8 +52,8 @@
     "framework-arduino-rp2040-arancino": {
       "type": "framework",
       "optional": true,
-      "owner": "smartmeio",
-      "version": "~1.10907.0"
+      "owner": "smartme-io",
+      "version": "~1.0.0"
     },
     "tool-rp2040tools": {
       "type": "uploader",
